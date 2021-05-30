@@ -17,8 +17,10 @@ Kullanıcıdan alınan bir karakter dizisinin içerisindeki harfleri, dizinin so
 
 Her bir satırında bir sayı bulunan sıralı erişimli sayilar.txt dosyasından verileri okuyup, daha sonra her bir sayının rakamlarının toplamını bulup bu toplam değerini, rakamları toplanan sayıyla aynı sırada olacak şekilde toplamlar.txt dosyasına yazan program kodunu yazınız.
 
-
 Örnek text dosyası ve program çıktısı:
+
+![image](https://user-images.githubusercontent.com/50625747/120103499-89e98f00-c158-11eb-997b-0c89434b7173.png)
+
 • 1. satırda: 10 → 1+0 = 1
 • 2. satırda: 28 → 2+8=10 → 1+0=1
 • 3. satırda: 99876 → 9+9+8+7+6=39 → 3+9=12 → 1+2=3
@@ -34,14 +36,7 @@ Her bir satırında bir sayı bulunan sıralı erişimli sayilar.txt dosyasında
 ## 1. Etap - Soru 3
 İnput olarak oruntumatrisi.txt isimli dosya alınarak, dosyada bulunan matriste istenilen örüntünün (soldan sağa, yukarıdan aşağıya ve çapraz) indislerini ve sayısını bulan programı yazınız.
 
-| 1 | 1 | 1 | 0 | 1 | 0 | 1 |
-| 1 | 1 | 0 | 1 | 1 | 1 | 0 |
-| 0 | 0 | 1 | 1 | 0 | 1 | 0 |
-| 1 | 0 | 1 | 0 | 1 | 0 | 0 |
-| 1 | 1 | 0 | 0 | 0 | 1 | 0 |
-| 1 | 1 | 0 | 1 | 0 | 1 | 1 |
-| 0 | 0 | 1 | 0 | 1 | 1 | 0 |
-| 0 | 0 | 1 | 0 | 0 | 1 | 1 |
+![image](https://user-images.githubusercontent.com/50625747/120103491-81915400-c158-11eb-8439-75e66051848b.png)
 
     Bu soruda çapraz şekilde aramayı sol üst köşeden sağ alta inerek yapabilirsiniz denildi. Benim çözümüm buna uygun şekilde yapıldı.
 
