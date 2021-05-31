@@ -1,5 +1,5 @@
 """
-@memrearal
+Muhammed Emre ARAL
 """
 
 import random
@@ -18,6 +18,7 @@ islem = 0
 devam = True
 while devam == True:
 	dene = int((bas + bitis)/2)
+	print("\nSkor: ",(100-islem))
 	print("Programın {}. Tahmini: {}".format(islem+1, dene))
 	girdi = int(input("Girdi: "))
 	if girdi == 2:
