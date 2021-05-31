@@ -4,7 +4,9 @@
 Kullanıcıdan alınan bir karakter dizisinin içerisindeki harfleri, dizinin sonundan başına doğru tekil bir şekilde yazdıran program kodunu yazınız.
 
 #### Örnek program çıktısı:
+
 **Kullanıcının girdiği dizi:** “Hsh72_i,oa5dalh-ih23”
+
 **Program çıktısı:** hiladosH
 
 #### Dikkat Edilmesi Gereken Noktalar:
