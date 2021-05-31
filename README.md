@@ -25,11 +25,17 @@ Her bir satırında bir sayı bulunan sıralı erişimli sayilar.txt dosyasında
 ![image](https://user-images.githubusercontent.com/50625747/120103499-89e98f00-c158-11eb-997b-0c89434b7173.png)
 
 • 1. satırda: 10 → 1+0 = 1
+
 • 2. satırda: 28 → 2+8=10 → 1+0=1
+
 • 3. satırda: 99876 → 9+9+8+7+6=39 → 3+9=12 → 1+2=3
+
 • 4. satırda: 2 → 2
+
 • 5. satırda: 45 → 4+5= 9
+
 • 6. satırda: 6697 → 6+6+9+7=28 → 2+8=10 → 1+0=1
+
 
 #### Dikkat Edilmesi Gereken Noktalar:
 • Toplam değeri bir rakam değil ise bu toplam değerinin de rakamları toplanıp yeni toplam değeri bulunmalıdır. Bu işlemler toplam değeri rakam oluncaya kadar devam etmelidir.
