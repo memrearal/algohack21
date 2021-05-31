@@ -38,7 +38,7 @@ Her bir satırında bir sayı bulunan sıralı erişimli sayilar.txt dosyasında
 
 ![image](https://user-images.githubusercontent.com/50625747/120103491-81915400-c158-11eb-8439-75e66051848b.png)
 
-    Bu soruda çapraz şekilde aramayı sol üst köşeden sağ alta inerek yapabilirsiniz denildi. Benim çözümüm buna uygun şekilde yapıldı.
+    Bu soruda çapraz şekilde aramayı sol üstten sağ alta inerek yapabilirsiniz denildi. Benim çözümüm buna uygun şekilde yapıldı.
 
 Ekran Çıktısı → Örüntülerin bulunduğu indisler ve örüntü adedi yazdırılacaktır.
 
@@ -61,3 +61,90 @@ Ekran Çıktısı → Örüntülerin bulunduğu indisler ve örüntü adedi yazd
 
  - etap1inputlar/sayilar.txt
  - etap1inputlar/oruntumatrisi.txt
+
+## 2. Etap Sorusu:
+
+Kullanıcı tarafından iki sayı seçilecektir. (Bu sayılar programa input olarak girilmeyecektir, kullanıcı aklında tutacaktır)
+
+Bu sayıların;
+
+❖ Toplamı 200 ile 1998 arasında olmalıdır.
+
+❖ Sayılar 3 basamaklı olmalıdır.
+
+❖ Sayıların rakamları kendi içinde birbirinden farklı olmalıdır. (Örnek: 456,537 ikilisi gibi)
+
+Sizden bir program yazmanızı ve yazdığınız program ile aklınızda tuttuğunuz bu 2 sayının tahmin yoluyla bulunması istenmektedir. Programa başta 100 puan verilecek ve her bir tahminde 100 puandan bir puan düşülerek son skor değeri de ekranda gösterilecektir.
+
+• Öncelikle bu iki sayının toplamını programdan bulmasını istiyoruz. Bunun için program kullanıcıya bir sayı tahmininde bulunacaktır. Kullanıcı geri dönüş inputu olarak;
+
+✓ 0 değerini girerse tahmin değerinin toplam değere eşit,
+
+✓ 1 değerini girerse tahmin değerinin toplam değerden küçük olduğu,
+
+✓ 2 değerini girerse tahmin değerinin toplam değerden büyük olduğu anlamına gelmektedir.
+
+
+Örnek:
+
+Kullanıcı aklından 123 ve 294 sayılarını tutsun. (Dikkat: İki sayıyı da oluşturan rakamlar o sayıda bir kez kullanılmıştır.)
+
+Kullanıcının tuttuğu sayıların toplamı :417
+
+Skor:100
+Programın 1. Tahmini: :500
+Kullanıcıdan Alınacak İnput: 2		// tahmin değeri, toplam değerden büyük
+
+Skor:99
+Programın 2. Tahmini: :385
+Kullanıcıdan Alınacak İnput: 1		// tahmin değeri, toplam değerden küçük
+
+…
+
+Skor:91
+Programın 9. Tahmini: 417
+Kullanıcıdan Alınacak İnput :0		// tahmin değeri, toplam değere eşit
+
+Program istediği kadar tahmin yapma hakkına sahiptir. Ancak her tahminde skorun bir azaldığı unutulmamalıdır. Skor, her adımda ekrana yazdırılmalıdır. 
+
+• Sayıların toplamı program tarafından bulunduktan sonra bu sefer programdan başta aklımızda tuttuğumuz sayıları tahmin etmesini isteyeceğiz.
+
+✓ Sayı tahmini sonucunda doğru rakam, doğru basamakta ise “+”,
+
+✓ Sayı tahmini sonucunda sayının içinde bulunan rakam, yanlış basamakta ise “–“,
+
+✓ Sayıda olmayan rakamlar için “ * ” işaretiyle programa input yaparak bilgilendirme yapmalıdır. 
+
+NOT: Program sayılar arasına “,” karakteri ile birbirinden ayırmalıdır. Tahmin işlemi “KüçükSayı,BüyükSayı” formatında olacaktır.
+
+Örnek: Kullanıcının tuttuğu sayılar:123,294
+
+    Skor:91
+    Programın 1. Tahmini: :52,265
+    Kullanıcıdan Alınacak İnput :+*-,+**
+    //1: Sayıda var ve doğru basamakta
+    //5: Sayıda yok
+    //2: Sayıda var ancak yanlış basamakta
+    
+    //2: Sayıda var ve doğru basamakta
+    //6: Sayıda yok
+    //5: Sayıda yok
+
+
+    Skor:90
+    Programın 2. Tahmini: 128,290
+    Kullanıcıdan Alınacak İnput :++*,++*
+
+    ...
+
+    ...
+
+    Skor:85
+    Programın 7. Tahmini: 123,294
+    Kullanıcıdan Alınacak İnput :+++,+++
+    Sayılar Bulundu: 123,294
+    Skor:85
+
+DEĞERLENDİRME: BU SÜREÇ TARAFIMIZDAN GİRİLEN 3 SAYI ÇİFTİ İLE TEKRARLANIP ELDE EDİLEN SKORLARIN ARİTMETİK ORTALAMASI SİZİN 2. ETAP NOTUNUZ OLARAK BELİRLENECEKTİR. HERKESTE AYNI 3 SAYI ÇİFTİ KULLANILACAKTIR.
+
+Yani algoritmanızı ne kadar iyi kurarsanız, programınız sayıları o kadar hızlı tahmin ederek en fazla puanı almanızı sağlar.
